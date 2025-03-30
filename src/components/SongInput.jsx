@@ -24,9 +24,11 @@ const SongInput = ({ onSubmit }) => {
       <input type="text" placeholder="곡명" value={title} onChange={(e) => setTitle(e.target.value)} required />
       <input type="text" placeholder="아티스트" value={artist} onChange={(e) => setArtist(e.target.value)} required />
       <input type="text" placeholder="곡 길이 (예: 3:45)" value={duration} onChange={(e) => setDuration(e.target.value)} required />
+      <div className='flex'>
       <input type="color" value={color} onChange={(e) => setColor(e.target.value)} />
       <input type="color" value={gradientColor1} onChange={(e) => setGradientColor1(e.target.value)} />
       <input type="color" value={gradientColor2} onChange={(e) => setGradientColor2(e.target.value)} />
+      </div>
       <select value={textColor} onChange={(e) => setTextColor(e.target.value)}>
         <option value="black">검은색</option>
         <option value="white">흰색</option>
