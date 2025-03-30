@@ -30,8 +30,8 @@ const SongInput = ({ onSubmit }) => {
       <input type="color" value={gradientColor2} onChange={(e) => setGradientColor2(e.target.value)} />
       </div>
       <select value={textColor} onChange={(e) => setTextColor(e.target.value)}>
-        <option value="black">검은색</option>
         <option value="white">흰색</option>
+        <option value="black">검은색</option>
       </select>
       <input type="text" placeholder="배경 이미지 URL" value={bgImage} onChange={(e) => setBgImage(e.target.value)} />
       <button type="submit">제출</button>
